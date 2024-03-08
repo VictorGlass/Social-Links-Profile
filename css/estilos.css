@@ -1,0 +1,122 @@
+:root {
+    /*Paleta de Colores*/
+    --blanco: #ffffff;
+    --grisClaro: #333333;
+    --grisOscuro: #1f1f1f;
+    --negro: #141414;
+    --verde: #c5f82a;
+
+    /*Tipografia*/
+    --fuentePrincipal: "Inter", sans-serif;
+}
+
+/*Valores Generales.*/
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Globales*/
+body {
+    padding: 20px;
+    font-family: var(--fuentePrincipal);
+    min-height: 100svh;
+    background-color: var(--negro);
+    color: var(--blanco);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Estilos Contenedor*/
+.contenedor {
+    width: 23rem;
+    height: 35rem;
+    background-color: var(--grisOscuro);
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.2s;
+}
+.contenedor:hover {
+    box-shadow: 0.2rem 0.2rem 0 var(--verde);
+}
+
+/*Estilos Info*/
+.contendor-info {
+    margin-top: 1.8rem;
+    margin-bottom: auto;
+    padding: 1rem;
+}
+
+/*Estilos Titulo*/
+.contenido-titulo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+}
+
+/*Estilos para el h2*/
+.contenido-texto{
+    color: var(--verde);
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 1.8rem;
+}
+
+/*Estilos Parrafo*/
+.contenido-parrafo {
+    font-size: 0.8rem;
+    padding-top: 1rem;
+}
+
+/*Estilos IMG*/
+.contenido-img{
+    width: 5.6rem;
+    border-radius: 50%;
+}
+
+/*Listado*/
+.contenido-listado {
+    padding: 0;
+    width: 100%;
+    height: 50%;
+}
+
+/*Listas*/
+li{
+    list-style: none;
+    background-color: var(--grisClaro);
+    width: 100%;
+    padding: 0.4rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    font-weight: 500;
+}
+li:hover{
+    background-color: var(--blanco);
+    color: var(--negro);
+    cursor: pointer;
+}
+
+/*Footer*/
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    text-align: center;
+    right: 0.4rem;
+    bottom: 0.4rem;
+    margin-top: 0.5rem;
+}
+
+a {
+    color: var(--verde);
+    text-decoration: none;
+}
